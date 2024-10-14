@@ -15,7 +15,7 @@ const Hero = () => {
                             <span className='text-slate-800'>CHYPHALLA</span>
                             <br />
                             <ReactTyped
-                                className='md:text-5xl sm:text-3xl text-xl text-white font-semibold  '
+                                className='md:text-5xl sm:text-3xl text-xl text-white font-semibold'
                                 strings={['OUDOMREACH']}
                                 typeSpeed={90}
                                 backSpeed={50}
