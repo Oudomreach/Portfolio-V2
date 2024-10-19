@@ -35,7 +35,7 @@ const Footer = () => {
                 <div className='flex sm:flex-row items-center justify-center gap-8 lg:gap-16 my-4'>
                 <div className="relative w-[120px] sm:w-[150px] h-[120px] sm:h-[150px] transform hover:scale-105 duration-500">
                     <div className='bg-purple-500 w-full h-full rounded-tl-xl rounded-br-xl flex items-center justify-center relative z-10'>
-                    <a href="#" className="flex flex-col items-center">
+                    <a href="https://t.me/khorkoo" className="flex flex-col items-center">
                         <FaTelegram size={40} sm:size={50} color='white' />
                         <span className="text-white mt-2 text-sm sm:text-base font-semibold">Contact Me</span>
                     </a>
