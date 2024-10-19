@@ -21,6 +21,10 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Build project
+        env:
+          VITE_EMAILJS_SERVICE_ID: ${{ secrets.VITE_SERVICE_ID }}
+          VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_TEMPLATE_ID }}
+          VITE_EMAILJS_USER_ID: ${{ secrets.VITE_USER_ID }}
         run: npm run build
 
       - name: Upload production-ready build files
@@ -30,10 +34,6 @@ jobs:
           path: ./dist
 
       - name: Build the React app
-        env:
-          VITE_EMAILJS_SERVICE_ID: ${{ secrets.VITE_SERVICE_ID }}
-          VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_TEMPLATE_ID }}
-          VITE_EMAILJS_USER_ID: ${{ secrets.VITE_USER_ID }}
         run: npm run build
 
   deploy:
@@ -51,7 +51,6 @@ jobs:
       
       - name: 'Create env file'
         run: |
-          touch .env
           echo VITE_EMAILJS_SERVICE_ID: ${{ secrets.VITE_SERVICE_ID }} >> .env
           echo VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_TEMPLATE_ID }} >> .env
           echo VITE_EMAILJS_USER_ID: ${{ secrets.VITE_USER_ID }} >> .env
