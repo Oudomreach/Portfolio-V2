@@ -34,7 +34,6 @@ jobs:
           VITE_SERVICE_ID: ${{ secrets.VITE_SERVICE_ID }}
           VITE_TEMPLATE_ID: ${{ secrets.VITE_TEMPLATE_ID }}
           VITE_USER_ID: ${{ secrets.VITE_USER_ID }}
-          API_KEY: ${{ secrets.API_KEY }}
         run: npm run build
 
   deploy:
