@@ -29,6 +29,13 @@ jobs:
           name: production-files
           path: ./dist
 
+      - name: Build the React app
+        env:
+          VITE_SERVICE_ID: ${{ secrets.VITE_SERVICE_ID }}
+          VITE_TEMPLATE_ID: ${{ secrets.VITE_TEMPLATE_ID }}
+          VITE_USER_ID: ${{ secrets.VITE_USER_ID }}
+        run: npm run build
+
   deploy:
     name: Deploy
     needs: build
