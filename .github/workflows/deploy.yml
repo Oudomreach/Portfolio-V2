@@ -31,9 +31,9 @@ jobs:
 
       - name: Build the React app
         env:
-          VITE_SERVICE_ID: ${{ secrets.VITE_SERVICE_ID }}
-          VITE_TEMPLATE_ID: ${{ secrets.VITE_TEMPLATE_ID }}
-          VITE_USER_ID: ${{ secrets.VITE_USER_ID }}
+          VITE_EMAILJS_SERVICE_ID: ${{ secrets.VITE_SERVICE_ID }}
+          VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_TEMPLATE_ID }}
+          VITE_EMAILJS_USER_ID: ${{ secrets.VITE_USER_ID }}
         run: npm run build
 
   deploy:
@@ -52,9 +52,9 @@ jobs:
       - name: 'Create env file'
         run: |
           touch .env
-          echo VITE_SERVICE_ID=${{ secrets.VITE_SERVICE_ID }} >> .env
-          echo VITE_TEMPLATE_ID=${{ secrets.VITE_TEMPLATE_ID }} >> .env
-          echo VITE_USER_ID=${{ secrets.VITE_USER_ID }} >> .env
+          echo VITE_EMAILJS_SERVICE_ID: ${{ secrets.VITE_SERVICE_ID }} >> .env
+          echo VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_TEMPLATE_ID }} >> .env
+          echo VITE_EMAILJS_USER_ID: ${{ secrets.VITE_USER_ID }} >> .env
           cat .env
 
       - name: Deploy to GitHub Pages
