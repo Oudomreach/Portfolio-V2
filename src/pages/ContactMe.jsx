@@ -51,7 +51,15 @@ const ContactMe = () => {
         const userId = import.meta.env.VITE_USER_ID;
     
         emailjs
-          .send(serviceId, templateId, formData, userId)
+          .send(
+            serviceId, 
+            templateId, 
+            {
+              from_name: formData.name,
+              from_email: formData.email,
+              message: formData.message,
+            }, 
+            userId)
           .then(
             (result) => {
               setStatusMessage('Message sent successfully!');
