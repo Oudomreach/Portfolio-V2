@@ -46,9 +46,9 @@ const ContactMe = () => {
         if (!validateForm()) return;
     
         // Replace these values with your actual EmailJS Service ID, Template ID, and User ID
-        const serviceId = import.meta.env.VITE_SERVICE_ID;
-        const templateId = import.meta.env.VITE_TEMPLATE_ID;
-        const userId = import.meta.env.VITE_USER_ID;
+        const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+        const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+        const userId = import.meta.env.VITE_EMAILJS_USER_ID;
     
         emailjs
           .send(
