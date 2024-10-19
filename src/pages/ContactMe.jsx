@@ -54,11 +54,7 @@ const ContactMe = () => {
           .send(
             serviceId, 
             templateId, 
-            {
-              from_name: formData.name,
-              from_email: formData.email,
-              message: formData.message,
-            }, 
+            formData, 
             userId)
           .then(
             (result) => {
