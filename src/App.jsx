@@ -7,6 +7,7 @@ import Educations from "./pages/Educations"
 import Experiences from "./pages/Experiences"
 import Hero from "./pages/Hero"
 import Skills from "./pages/Skills"
+import ScrollToTopButton from "./components/ScrollToTopButton"
 
 
 
@@ -21,6 +22,7 @@ function App() {
         <Educations />
         <Skills />
       </div>
+      <ScrollToTopButton />
       <ContactMe />
       
       {/* <Connects /> */}
