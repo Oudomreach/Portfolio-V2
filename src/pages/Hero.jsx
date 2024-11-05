@@ -2,6 +2,8 @@ import React from 'react'
 import profile from '../assets/profile.png';
 import { ReactTyped } from 'react-typed';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import resume from '../assets/resume.pdf';
 
 const Hero = () => {
   return (
@@ -26,7 +28,14 @@ const Hero = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, blanditiis est culpa cum praesentium neque beatae eligendi libero distinctio amet!
                     </h3>
                     <button className="border-2 text-white px-6 py-2 text-sm sm:text-lg rounded-md font-medium hover:bg-white hover:text-purple-500 transform duration-200">
-                        Resume
+                        <a
+                            href={resume} // Replace with the actual path to your PDF file
+                            download="resume.pdf" // The name the file will be saved as
+                            // target='_blank'
+                            className="text-white hover:text-purple-500"
+                        >
+                            Resume
+                        </a>
                     </button>
                 </div>
                 <div className="w-[60%] sm:w-[50%] lg:w-[40%] h-auto mt-6 lg:mt-0 rounded-full overflow-hidden">
