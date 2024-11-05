@@ -75,7 +75,7 @@ const ContactMe = () => {
       };
   return (
     <>
-      <div className='w-screen h-auto bg-purple-500 font-poppins p-6 lg:p-8 scroll-smooth'>
+      <div id='contact' className='w-screen h-auto bg-purple-500 font-poppins p-6 lg:p-8 scroll-smooth'>
         <div className='w-full max-w-[1080px] flex flex-col lg:flex-row items-center justify-between mx-auto'>
           {/* Form Section */}
           <div className='w-full lg:w-full'>

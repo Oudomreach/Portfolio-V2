@@ -7,7 +7,7 @@ const Educations = () => {
     <>
         
 
-        <div className='w-screen h-auto bg-purple-500 font-poppins p-6 lg:p-8 scroll-smooth'>
+        <div id='education' className='w-screen h-auto bg-purple-500 font-poppins p-6 lg:p-8 scroll-smooth'>
             <div className='w-full max-w-[1080px] flex items-center justify-center mx-auto'>
                 <div className='flex flex-col items-center justify-between w-full'>
                 <div className='px-2 uppercase font-medium border-white border-b-4 m-2'>

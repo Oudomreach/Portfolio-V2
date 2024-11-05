@@ -46,44 +46,45 @@ const Navbar = () => {
 
           {/* 2nd Flex - Navigation Links (Hidden on smaller screens, shown on larger screens) */}
           <div className="hidden sm:flex text-base">
-            <Link className={`mx-4 p-1 font-semibold cursor-pointer ${isActive('/about') ? 'border-b-[3px] border-purple-500' : 'border-b-0'}`} to="/about">About Me</Link>
-            <Link className={`mx-4 p-1 font-semibold cursor-pointer ${isActive('/skills') ? 'border-b-[3px] border-purple-500' : 'border-b-0'}`} to="/skills">Skills</Link>
-            <Link className={`mx-4 p-1 font-semibold cursor-pointer ${isActive('/experience') ? 'border-b-[3px] border-purple-500' : 'border-b-0'}`} to="/experience">Experience</Link>
-            <Link className={`mx-4 p-1 font-semibold cursor-pointer ${isActive('/education') ? 'border-b-[3px] border-purple-500' : 'border-b-0'}`} to="/education">Education</Link>
+            <a className={`mx-4 p-1 font-semibold cursor-pointer ${isActive('/about') ? 'border-b-[3px] border-purple-500' : 'border-b-0'}`} href="#about">About Me</a>
+            <a className={`mx-4 p-1 font-semibold cursor-pointer ${isActive('/skills') ? 'border-b-[3px] border-purple-500' : 'border-b-0'}`} href="#skills">Skills</a>
+            <a className={`mx-4 p-1 font-semibold cursor-pointer ${isActive('/experience') ? 'border-b-[3px] border-purple-500' : 'border-b-0'}`} href="#exp">Experience</a>
+            <a className={`mx-4 p-1 font-semibold cursor-pointer ${isActive('/education') ? 'border-b-[3px] border-purple-500' : 'border-b-0'}`} href="#education">Education</a>
+            <a className={`mx-4 p-1 font-semibold cursor-pointer ${isActive('/education') ? 'border-b-[3px] border-purple-500' : 'border-b-0'}`} href="#contact">Contat Me</a>
           </div>
         </div>
 
         {/* Mobile Menu (Visible only on small screens when hamburger is clicked) */}
         <div className={`sm:hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[500px]' : 'max-h-0'} overflow-hidden`}>
           <div className="flex flex-col items-center sm:items-start p-4 text-center sm:text-left">
-            <Link
+            <a
               className="my-2 p-1 font-semibold border-b-[3px] border-purple-500 cursor-pointer transition-opacity duration-300"
-              to="/about"
+              href="#about"
               onClick={toggleMenu}
             >
               About Me
-            </Link>
-            <Link
+            </a>
+            <a
               className="my-2 p-1 font-semibold border-b-[3px] border-purple-500 cursor-pointer transition-opacity duration-300"
-              to="/skills"
+              href="#skills"
               onClick={toggleMenu}
             >
               Skills
-            </Link>
-            <Link
+            </a>
+            <a
               className="my-2 p-1 font-semibold border-b-[3px] border-purple-500 cursor-pointer transition-opacity duration-300"
-              to="/experience"
+              href="#exp"
               onClick={toggleMenu}
             >
               Experience
-            </Link>
-            <Link
+            </a>
+            <a
               className="my-2 p-1 font-semibold border-b-[3px] border-purple-500 cursor-pointer transition-opacity duration-300"
-              to="/education"
+              href="#education"
               onClick={toggleMenu}
             >
               Education
-            </Link>
+            </a>
           </div>
         </div>
       </div>

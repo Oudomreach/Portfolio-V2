@@ -6,7 +6,7 @@ const Experiences = () => {
     <>
         
 
-        <div className='w-screen h-auto mx-auto bg-purple-400 font-poppins scroll-smooth pb-8'>
+        <div id='exp' className='w-screen h-auto mx-auto bg-purple-400 font-poppins scroll-smooth pb-8'>
             <div className='w-full max-w-[1080px] flex items-center justify-center mx-auto px-4 lg:px-0'>
                 <div className='flex flex-col items-center justify-between p-4'>
                 <div className='px-2 uppercase font-medium border-white border-b-4 m-2'>

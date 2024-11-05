@@ -7,7 +7,7 @@ const Skills = () => {
         
   return (
     <>
-        <div className='w-screen h-auto lg:h-[380px] bg-purple-400 font-poppins p-6 lg:p-8 scroll-smooth'>
+        <div id='skills' className='w-screen h-auto lg:h-[380px] bg-purple-400 font-poppins p-6 lg:p-8 scroll-smooth'>
             <div className='flex items-center justify-center pb-4'>
                 <h1 className='text-2xl sm:text-3xl text-white font-medium mb-4 border-b-4 px-2 border-white inline-block'>
                 Skills

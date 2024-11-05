@@ -1,5 +1,5 @@
 import React from 'react'
-import profile from '../assets/profile.png';
+import profilePic from '../assets/profile.png';
 import { ReactTyped } from 'react-typed';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -24,8 +24,12 @@ const Hero = () => {
                             loop
                         />
                     </h2>
-                    <h3 className="text-sm sm:text-md text-white py-5 pt-6">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, blanditiis est culpa cum praesentium neque beatae eligendi libero distinctio amet!
+                    <h3 className="text-balance text-sm sm:text-md text-white py-5 pt-6">
+                        I have almost 2 years experience with private company working with System Admin,Database Admin, Infra, Helpdesk, Software Support, Web Maintainence.
+                        Also involve with management work on new system, new feature etc... 
+                        <br />
+                        <br />
+                        Currently improve myselft in programming
                     </h3>
                     <button className="border-2 text-white px-6 py-2 text-sm sm:text-lg rounded-md font-medium hover:bg-white hover:text-purple-500 transform duration-200">
                         <a
@@ -44,6 +48,13 @@ const Hero = () => {
                         alt="avatar"
                         className="object-cover"
                     />
+                    {/* <div className="relative mx-auto bg-white rounded-full overflow-hidden">
+                        <img 
+                            src={profilePic}
+                            layout="fill"
+                            alt="Profile"
+                        />
+                    </div> */}
                 </div>
             </div>
         </div>
